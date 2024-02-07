@@ -37,7 +37,6 @@ function App(): JSX.Element {
                         </ul>
                     </Col>
                     <Col>
-                        {" "}
                         The Best Cats
                         <ul>
                             <li>Tabby</li>
