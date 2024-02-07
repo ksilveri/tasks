@@ -20,20 +20,29 @@ function App(): JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. Kelly Silveri. Hello World.
             </p>
-            <ul>
-                <li>beagle</li>
-                <li>golden retriever</li>
-                <li>pitbull</li>
-                <li>boxer</li>
-            </ul>
-            <Button>Log Hello World</Button>
+
             <Button onClick={() => console.log("Hello World!")}>
                 Log Hello World
             </Button>
             <Container>
                 <Row>
-                    <Col>The Best Dogs </Col>
+                    <Col>
+                        The Best Dogs
+                        <ul>
+                            <li>beagle</li>
+                            <li>golden retriever</li>
+                            <li>husky</li>
+                            <li>pitbull</li>
+                            <li>Australian Shepherd</li>
+                        </ul>
+                    </Col>
                     <Col> The Best Cats</Col>
+                    <ul>
+                        <li>Tabby</li>
+                        <li>Calico</li>
+                        <li>Siamese</li>
+                        <li>Sphynx</li>
+                    </ul>
                 </Row>
             </Container>
         </div>
