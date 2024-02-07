@@ -8,10 +8,6 @@ function App(): JSX.Element {
             <header className="App-header">
                 UD CISC275 with React Hooks and TypeScript
             </header>
-            <h1>
-                {" "}
-                <span style={{ color: "pink" }}>New Header</span>
-            </h1>
             <img
                 src="puppyimage.jpeg"
                 alt="A beagle puppy making his first howl!"
@@ -29,10 +25,10 @@ function App(): JSX.Element {
                     <Col>
                         The Best Dogs
                         <ul>
-                            <li>beagle</li>
-                            <li>golden retriever</li>
-                            <li>husky</li>
-                            <li>pitbull</li>
+                            <li>Beagle</li>
+                            <li>Golden retriever</li>
+                            <li>Husky</li>
+                            <li>Pitbull</li>
                             <li>Australian Shepherd</li>
                         </ul>
                     </Col>
@@ -43,6 +39,7 @@ function App(): JSX.Element {
                             <li>Calico</li>
                             <li>Siamese</li>
                             <li>Sphynx</li>
+                            <li>Persian</li>
                         </ul>
                     </Col>
                 </Row>
