@@ -11,8 +11,8 @@ Browserslist: caniuse-lite is outdated. Please run:
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-PASS src/App.test.tsx
 PASS src/text.test.tsx
+PASS src/App.test.tsx
 FAIL src/HtmlCss.test.tsx
   ● Some HTML Elements are added. › There is a list with at least three elements
 
@@ -124,7 +124,6 @@ FAIL src/HtmlCss.test.tsx
               [36m<div[39m
                 [33mclass[39m=[32m"col"[39m
               [36m>[39m
-                [0m [0m
                 [0mThe Best Cats[0m
                 [36m<ul>[39m
                   [36m<li>[39m
@@ -171,5 +170,5 @@ All files |     100 |      100 |     100 |     100 |
 Test Suites: 1 failed, 2 passed, 3 total
 Tests:       1 failed, 8 passed, 9 total
 Snapshots:   0 total
-Time:        2.752 s
+Time:        2.822 s
 Ran all test suites.
