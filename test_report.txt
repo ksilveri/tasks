@@ -124,22 +124,23 @@ FAIL src/HtmlCss.test.tsx
               [36m<div[39m
                 [33mclass[39m=[32m"col"[39m
               [36m>[39m
-                [0m The Best Cats[0m
+                [0m [0m
+                [0mThe Best Cats[0m
+                [36m<ul>[39m
+                  [36m<li>[39m
+                    [0mTabby[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mCalico[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mSiamese[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mSphynx[0m
+                  [36m</li>[39m
+                [36m</ul>[39m
               [36m</div>[39m
-              [36m<ul>[39m
-                [36m<li>[39m
-                  [0mTabby[0m
-                [36m</li>[39m
-                [36m<li>[39m
-                  [0mCalico[0m
-                [36m</li>[39m
-                [36m<li>[39m
-                  [0mSiamese[0m
-                [36m</li>[39m
-                [36m<li>[39m
-                  [0mSphynx[0m
-                [36m</li>[39m
-              [36m</ul>[39m
             [36m</div>[39m
           [36m</div>[39m
         [36m</div>[39m
@@ -170,5 +171,5 @@ All files |     100 |      100 |     100 |     100 |
 Test Suites: 1 failed, 2 passed, 3 total
 Tests:       1 failed, 8 passed, 9 total
 Snapshots:   0 total
-Time:        2.797 s
+Time:        2.752 s
 Ran all test suites.
