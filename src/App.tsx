@@ -36,13 +36,16 @@ function App(): JSX.Element {
                             <li>Australian Shepherd</li>
                         </ul>
                     </Col>
-                    <Col> The Best Cats</Col>
-                    <ul>
-                        <li>Tabby</li>
-                        <li>Calico</li>
-                        <li>Siamese</li>
-                        <li>Sphynx</li>
-                    </ul>
+                    <Col>
+                        {" "}
+                        The Best Cats
+                        <ul>
+                            <li>Tabby</li>
+                            <li>Calico</li>
+                            <li>Siamese</li>
+                            <li>Sphynx</li>
+                        </ul>
+                    </Col>
                 </Row>
             </Container>
         </div>
