@@ -17,7 +17,9 @@ function App(): JSX.Element {
                 automatically reload. Kelly Silveri. Hello World.
             </p>
 
-            <Button>Click Me</Button>
+            <Button onClick={() => console.log("Hello World!")}>
+                Log Hello World
+            </Button>
             <Container>
                 <Row>
                     <Col>
