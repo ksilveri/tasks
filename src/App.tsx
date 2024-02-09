@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import image from "./puppyimage.jpeg";
 
 function App(): JSX.Element {
     return (
@@ -14,7 +15,8 @@ function App(): JSX.Element {
             <h1> New Header</h1>
             <img
                 src="puppyimage.jpeg"
-                alt="A beagle puppy making his first howl!"/>
+                alt="A beagle puppy making his first howl!"
+            />
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. Kelly Silveri. Hello World.
