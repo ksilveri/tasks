@@ -14,179 +14,6 @@ Browserslist: caniuse-lite is outdated. Please run:
 PASS src/text.test.tsx
 PASS src/App.test.tsx
 FAIL src/HtmlCss.test.tsx
-  ● Some HTML Elements are added. › There is a header
-
-    TestingLibraryElementError: Unable to find an accessible element with the role "heading"
-
-    Here are the accessible roles:
-
-      banner:
-
-      Name "":
-      [36m<header[39m
-        [33mclass[39m=[32m"App-header"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-      img:
-
-      Name "A beagle puppy making his first howl!":
-      [36m<img[39m
-        [33malt[39m=[32m"A beagle puppy making his first howl!"[39m
-        [33msrc[39m=[32m"puppyimage.jpeg"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-      button:
-
-      Name "Log Hello World":
-      [36m<button[39m
-        [33mclass[39m=[32m"btn btn-primary"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-      list:
-
-      Name "":
-      [36m<ul />[39m
-
-      Name "":
-      [36m<ul />[39m
-
-      --------------------------------------------------
-      listitem:
-
-      Name "":
-      [36m<li />[39m
-
-      Name "":
-      [36m<li />[39m
-
-      Name "":
-      [36m<li />[39m
-
-      Name "":
-      [36m<li />[39m
-
-      Name "":
-      [36m<li />[39m
-
-      Name "":
-      [36m<li />[39m
-
-      Name "":
-      [36m<li />[39m
-
-      Name "":
-      [36m<li />[39m
-
-      Name "":
-      [36m<li />[39m
-
-      Name "":
-      [36m<li />[39m
-
-      --------------------------------------------------
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"App"[39m
-        [36m>[39m
-          [36m<header[39m
-            [33mclass[39m=[32m"App-header"[39m
-          [36m>[39m
-            [0mUD CISC275 with React Hooks and TypeScript[0m
-          [36m</header>[39m
-          [36m<img[39m
-            [33malt[39m=[32m"A beagle puppy making his first howl!"[39m
-            [33msrc[39m=[32m"puppyimage.jpeg"[39m
-          [36m/>[39m
-          [36m<p>[39m
-            [0mEdit [0m
-            [36m<code>[39m
-              [0msrc/App.tsx[0m
-            [36m</code>[39m
-            [0m and save. This page will automatically reload. Kelly Silveri. Hello World.[0m
-          [36m</p>[39m
-          [36m<button[39m
-            [33mclass[39m=[32m"btn btn-primary"[39m
-            [33mtype[39m=[32m"button"[39m
-          [36m>[39m
-            [0mLog Hello World[0m
-          [36m</button>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"container"[39m
-          [36m>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"row"[39m
-            [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"col"[39m
-              [36m>[39m
-                [0mThe Best Dogs[0m
-                [36m<ul>[39m
-                  [36m<li>[39m
-                    [0mBeagle[0m
-                  [36m</li>[39m
-                  [36m<li>[39m
-                    [0mGolden retriever[0m
-                  [36m</li>[39m
-                  [36m<li>[39m
-                    [0mHusky[0m
-                  [36m</li>[39m
-                  [36m<li>[39m
-                    [0mPitbull[0m
-                  [36m</li>[39m
-                  [36m<li>[39m
-                    [0mAustralian Shepherd[0m
-                  [36m</li>[39m
-                [36m</ul>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"col"[39m
-              [36m>[39m
-                [0mThe Best Cats[0m
-                [36m<ul>[39m
-                  [36m<li>[39m
-                    [0mTabby[0m
-                  [36m</li>[39m
-                  [36m<li>[39m
-                    [0mCalico[0m
-                  [36m</li>[39m
-                  [36m<li>[39m
-                    [0mSiamese[0m
-                  [36m</li>[39m
-                  [36m<li>[39m
-                    [0mSphynx[0m
-                  [36m</li>[39m
-                  [36m<li>[39m
-                    [0mPersian[0m
-                  [36m</li>[39m
-                [36m</ul>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-       7 |     test("There is a header", () => {
-       8 |         render(<App />);
-    >  9 |         const header = screen.getByRole("heading");
-         |                               ^
-      10 |         expect(header).toBeInTheDocument();
-      11 |     });
-      12 |
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/HtmlCss.test.tsx:9:31)
-
   ● Some HTML Elements are added. › There is a list with at least three elements
 
     TestingLibraryElementError: Found multiple elements with the role "list"
@@ -244,6 +71,9 @@ FAIL src/HtmlCss.test.tsx
           [36m>[39m
             [0mUD CISC275 with React Hooks and TypeScript[0m
           [36m</header>[39m
+          [36m<h1>[39m
+            [0m New Header[0m
+          [36m</h1>[39m
           [36m<img[39m
             [33malt[39m=[32m"A beagle puppy making his first howl!"[39m
             [33msrc[39m=[32m"puppyimage.jpeg"[39m
@@ -339,7 +169,7 @@ All files |     100 |      100 |     100 |     100 |
  App.tsx  |     100 |      100 |     100 |     100 |                   
 ----------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 2 passed, 3 total
-Tests:       2 failed, 7 passed, 9 total
+Tests:       1 failed, 8 passed, 9 total
 Snapshots:   0 total
-Time:        2.819 s
+Time:        2.702 s
 Ran all test suites.
