@@ -6,8 +6,12 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
+                <style>
+                    <div id="FF0000"></div>;
+                </style>
                 UD CISC275 with React Hooks and TypeScript
             </header>
+            <h1> New Header</h1>
             <img
                 src="puppyimage.jpeg"
                 alt="A beagle puppy making his first howl!"
