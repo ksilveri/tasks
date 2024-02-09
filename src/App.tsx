@@ -14,8 +14,7 @@ function App(): JSX.Element {
             <h1> New Header</h1>
             <img
                 src="puppyimage.jpeg"
-                alt="A beagle puppy making his first howl!"
-            />
+                alt="A beagle puppy making his first howl!"/>
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. Kelly Silveri. Hello World.
