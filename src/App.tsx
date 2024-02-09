@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
+import puppy from "./puppyimage.jpeg";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import puppyimage from "./puppyimage.jpeg";
 
 function App(): JSX.Element {
     return (
@@ -10,10 +10,7 @@ function App(): JSX.Element {
                 UD CISC275 with React Hooks and TypeScript
             </header>
             <h1> New Header</h1>
-            <img
-                src="puppyimage.jpeg"
-                alt="A beagle puppy making his first howl!"
-            />
+            <img src={puppy} alt="A beagle puppy making his first howl!" />
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. Kelly Silveri. Hello World.
