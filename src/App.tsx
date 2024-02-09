@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import puppyimage from "./puppyimage.jpeg";
 
 function App(): JSX.Element {
     return (
