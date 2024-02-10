@@ -7,9 +7,14 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                UD CISC275 with React Hooks and TypeScript
+                <span style={{ backgroundColor: "pink" }}>
+                    UD CISC275 with React Hooks and TypeScript
+                </span>
             </header>
-            <h1> New Header</h1>
+
+            <h1>
+                <span style={{ backgroundColor: "pink" }}>New Header</span>
+            </h1>
             <img src={puppy} alt="A beagle puppy making his first howl!" />
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
