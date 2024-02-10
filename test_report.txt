@@ -69,10 +69,18 @@ FAIL src/HtmlCss.test.tsx
           [36m<header[39m
             [33mclass[39m=[32m"App-header"[39m
           [36m>[39m
-            [0mUD CISC275 with React Hooks and TypeScript[0m
+            [36m<span[39m
+              [33mstyle[39m=[32m"background-color: pink;"[39m
+            [36m>[39m
+              [0mUD CISC275 with React Hooks and TypeScript[0m
+            [36m</span>[39m
           [36m</header>[39m
           [36m<h1>[39m
-            [0m New Header[0m
+            [36m<span[39m
+              [33mstyle[39m=[32m"background-color: pink;"[39m
+            [36m>[39m
+              [0mNew Header[0m
+            [36m</span>[39m
           [36m</h1>[39m
           [36m<img[39m
             [33malt[39m=[32m"A beagle puppy making his first howl!"[39m
@@ -171,5 +179,5 @@ All files |     100 |      100 |     100 |     100 |
 Test Suites: 1 failed, 2 passed, 3 total
 Tests:       1 failed, 8 passed, 9 total
 Snapshots:   0 total
-Time:        2.881 s
+Time:        2.632 s
 Ran all test suites.
