@@ -38,14 +38,11 @@ function App(): JSX.Element {
                         </ul>
                     </Col>
                     <Col>
-                        The Best Cats
-                        <ol>
-                            <li>Tabby</li>
-                            <li>Calico</li>
-                            <li>Siamese</li>
-                            <li>Sphynx</li>
-                            <li>Persian</li>
-                        </ol>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
                     </Col>
                 </Row>
             </Container>
