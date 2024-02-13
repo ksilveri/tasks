@@ -24,6 +24,12 @@ function App(): JSX.Element {
             <Button onClick={() => console.log("Hello World!")}>
                 Log Hello World
             </Button>
+
+            <ol>
+                <li>test1</li>
+                <li>test 2</li>
+                <li>test3</li>
+            </ol>
             <Container>
                 <Row>
                     <Col>
@@ -38,13 +44,13 @@ function App(): JSX.Element {
                     </Col>
                     <Col>
                         The Best Cats
-                        <ul>
+                        <ol>
                             <li>Tabby</li>
                             <li>Calico</li>
                             <li>Siamese</li>
                             <li>Sphynx</li>
                             <li>Persian</li>
-                        </ul>
+                        </ol>
                     </Col>
                 </Row>
             </Container>
