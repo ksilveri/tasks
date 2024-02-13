@@ -25,11 +25,6 @@ function App(): JSX.Element {
                 Log Hello World
             </Button>
 
-            <ol>
-                <li>test1</li>
-                <li>test 2</li>
-                <li>test3</li>
-            </ol>
             <Container>
                 <Row>
                     <Col>
