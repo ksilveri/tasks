@@ -7,13 +7,11 @@ function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                <span style={{ backgroundColor: "pink" }}>
-                    UD CISC275 with React Hooks and TypeScript
-                </span>
+                UD CISC275 with React Hooks and TypeScript
             </header>
 
             <h1>
-                <span style={{ backgroundColor: "pink" }}>New Header</span>
+                <span style={{ color: "pink" }}>New Header</span>
             </h1>
             <img src={puppy} alt="A beagle puppy making his first howl!" />
             <p>
@@ -28,6 +26,15 @@ function App(): JSX.Element {
             <Container>
                 <Row>
                     <Col>
+                        <div
+                            style={{
+                                backgroundColor: "red",
+                                maxHeight: "500",
+                                maxWidth: "200"
+                            }}
+                        >
+                            <span style={{ color: "red" }}> Rectangle</span>
+                        </div>
                         The Best Dogs
                         <ul>
                             <li>Beagle</li>
@@ -38,6 +45,15 @@ function App(): JSX.Element {
                         </ul>
                     </Col>
                     <Col>
+                        <div
+                            style={{
+                                backgroundColor: "red",
+                                maxHeight: "300",
+                                maxWidth: "200"
+                            }}
+                        >
+                            <span style={{ color: "red" }}> Rectangle</span>
+                        </div>
                         <li> </li>
                         <li> </li>
                         <li> </li>
