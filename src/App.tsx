@@ -54,8 +54,7 @@ function App(): JSX.Element {
                         >
                             <span style={{ color: "red" }}> Rectangle</span>
                         </div>
-                        <li> </li>
-                        <li> </li>
+
                         <li> </li>
                         <li> </li>
                         <li> </li>
