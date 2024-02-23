@@ -112,11 +112,22 @@ export function makeMath(addends: number[]): string {
  * And the array [1, 9, 7] would become [1, 9, 7, 17]
  */
 export function injectPositive(values: number[]): number[] {
-    return values.map((value) => {
-        if (value < 1) {
-            //sum up prev numbers
-        }
-    });
+    //index of first neg num
+    const firstNeg = values.findIndex((num) => num < 0);
+    //no neg then find sum
+    if (firstNeg === -1) {
+        const total = values.reduce((acc, curr) => acc + curr, 0);
+        return [...values, total];
+    }
+    //find sum of prev numbers
+    const sum = values.slice(0, firstNeg).reduce((acc, curr) => acc + curr, 0);
+    //put value after neg number
+    const newValue = [
+        ...values.slice(0, firstNeg + 1),
+        sum,
+        ...values.slice(firstNeg + 1)
+    ];
+    return newValue;
 }
 function endsWith(
     arg0: string
