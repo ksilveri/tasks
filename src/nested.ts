@@ -1,6 +1,6 @@
 import { Answer } from "./interfaces/answer";
 import { Question, QuestionType } from "./interfaces/question";
-import { makeBlankQuestion } from "./objects";
+import { duplicateQuestion, makeBlankQuestion } from "./objects";
 
 /**
  * Consumes an array of questions and returns a new array with only the questions
@@ -232,9 +232,9 @@ export function duplicateQuestionInArray(
         if (index === -1) {
             return questions;
         }
-        const duplicatedQuestion = duplicatedQuestion(newId, questions[index]);
+        const duplicate = duplicateQuestion(newId, questions[index]);
         const newQuestion = [...questions];
-        newQuestion.splice(index + 1, 0, duplicatedQuestion);
+        newQuestion.splice(index + 1, 0, duplicate);
         return newQuestion;
     }
 }
