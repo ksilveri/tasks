@@ -56,6 +56,3 @@ export function convertYesNo(word: string): boolean | null {
     }
     return null;
 }
-function toUpperCase(message: string): any {
-    throw new Error("Function not implemented.");
-}
