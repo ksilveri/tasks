@@ -30,6 +30,12 @@ export function makeBlankQuestion(
  * HINT: Look up the `trim` and `toLowerCase` functions.
  */
 export function isCorrect(question: Question, answer: string): boolean {
+    const expectedAnswer = question.expected.trim().toLowerCase();
+    const givenAnswer = answer.trim().toLowerCase();
+
+    if (expectedAnswer === givenAnswer) {
+        return true;
+    }
     return false;
 }
 
@@ -40,6 +46,11 @@ export function isCorrect(question: Question, answer: string): boolean {
  * be exactly one of the options.
  */
 export function isValid(question: Question, answer: string): boolean {
+    if (question.type === "short_answer_question") {
+        return true;
+    } else if (question.type === "multiple_choice_question") {
+        return question.options.includes(answer);
+    }
     return false;
 }
 
@@ -50,7 +61,11 @@ export function isValid(question: Question, answer: string): boolean {
  * name "My First Question" would become "9: My First Q".
  */
 export function toShortForm(question: Question): string {
-    return "";
+    const short: string =
+        question.name.length > 10
+            ? question.name.substring(0, 10)
+            : question.name;
+    return question.id + ": " + short;
 }
 
 /**
@@ -71,7 +86,15 @@ export function toShortForm(question: Question): string {
  * Check the unit tests for more examples of what this looks like!
  */
 export function toMarkdown(question: Question): string {
-    return "";
+    let format = "# " + question.name + "\n" + question.body;
+
+    if (question.type === "multiple_choice_question") {
+        const optionFormat = question.options
+            .map((option) => "- " + option)
+            .join("\n");
+        format += "\n" + optionFormat;
+    }
+    return format;
 }
 
 /**
@@ -79,7 +102,8 @@ export function toMarkdown(question: Question): string {
  * `newName`.
  */
 export function renameQuestion(question: Question, newName: string): Question {
-    return question;
+    const rename: Question = { ...question, name: newName };
+    return rename;
 }
 
 /**
