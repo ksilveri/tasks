@@ -129,8 +129,3 @@ export function injectPositive(values: number[]): number[] {
     ];
     return newValue;
 }
-function endsWith(
-    arg0: string
-): (value: string, index: number, array: string[]) => value is string {
-    throw new Error("Function not implemented.");
-}
