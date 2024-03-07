@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
+
 interface doublerProps {
     setDoubler: (dhValue: number) => void;
     doubValue: number;
