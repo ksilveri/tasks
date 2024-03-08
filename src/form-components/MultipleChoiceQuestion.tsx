@@ -19,19 +19,19 @@ export function MultipleChoiceQuestion({
      */
 
     const [currentSelect, setCurrentSelect] = useState<string>(options[0]);
-    const [correct, setCorrect] = useState<boolean>(false);
+    const Correct = currentSelect === expectedAnswer;
 
     function updateCurrent(event: React.ChangeEvent<HTMLSelectElement>) {
         setCurrentSelect(event.target.value);
     }
 
-    function checkAnswer(): void {
+    /*function checkAnswer(): void {
         if (currentSelect === expectedAnswer) {
             setCorrect(true);
         } else {
             setCorrect(false);
         }
-    }
+    }*/
     return (
         <div>
             <h3>Multiple Choice Question</h3>
@@ -45,11 +45,8 @@ export function MultipleChoiceQuestion({
                     ))}
                 </Form.Select>
             </Form.Group>
-            <p>
-                {correct === true && <span>✔️</span>}
-                {correct === false && <span>❌</span>}
-            </p>
-            <button onClick={checkAnswer}>Check</button>/
+            {Correct && <span>✔️</span>}
+            {!Correct && <span>❌</span>}
         </div>
     );
 }

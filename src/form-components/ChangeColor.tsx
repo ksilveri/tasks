@@ -28,40 +28,42 @@ export function ChangeColor(): JSX.Element {
     ];
     const [colorChoice, setColorChoice] = useState<string>("pink");
 
-    function updateColor(color: string) {
-        setColorChoice(color);
-    }
-
+    const colorChange = (color: string) => {
+        setColorChoice(color === colorChoice ? "on" : color);
+    };
     return (
         <div>
             <h3>Change Color</h3>
             {colors.map((color) => (
-                <Form.Check
-                    key={color}
-                    inline
-                    type="radio"
-                    name="colors"
-                    id={"color-${color}"}
-                    label={color}
-                    style={{ backgroundColor: color }}
-                    //value={colors}
-                    checked={colorChoice === color}
-                    onChange={() => updateColor(color)}
-                />
+                <div key={color} className="form-check-inline">
+                    <Form.Check
+                        type="radio"
+                        name="color"
+                        id={"color-${color}"}
+                        value={color}
+                        checked={colorChoice === color}
+                        onChange={() => colorChange(color)}
+                        className="form-check-inline"
+                    />
+                    <label
+                        htmlFor={"color-${color}"}
+                        style={{ backgroundColor: color }}
+                    >
+                        {color}
+                    </label>
+                </div>
             ))}
-            <div
-                data-testid="colored-box"
-                style={{
-                    backgroundColor: colorChoice
-                }}
-            />
-            <p>
-                You have chosen{" "}
-                <span style={{ backgroundColor: colorChoice }}>
-                    {colorChoice}
-                </span>
-                .
-            </p>
+            <div>
+                <p>
+                    You have chosen{" "}
+                    <span
+                        data-testid="colored-box"
+                        style={{ backgroundColor: colorChoice }}
+                    >
+                        {colorChoice}
+                    </span>
+                </p>
+            </div>
         </div>
     );
 }
