@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
-import { formatWithOptions } from "util";
+//import { formatWithOptions } from "util";
 
 export function MultipleChoiceQuestion({
     options,
